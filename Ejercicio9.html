@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página Responsiva con Galería de Imágenes</title>
+  <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        a:hover {
+            background-color: #555; 
+        }
+
+        a:active {
+            color: #ff4500; 
+        }
+
+        
+        @media (max-width: 600px) {
+            ul {
+                flex-direction: column; 
+                text-align: center; 
+            }
+        }
+
+        
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .imagen-galeria {
+            margin: 10px;
+        }
+
+        
+        .ventana-emergente {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            z-index: 1;
+        }
+
+        .imagen-emergente {
+            max-width: 80%;
+            max-height: 80%;
+            margin: 10% auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#redes-sociales">Redes Sociales</a></li>
+            <li><a href="#galeria">Galería de Imágenes</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="biografia">Biografía</h1>
+    <p>Adrian Vera es un apasionado estudiante de ingeniería que combina con éxito sus estudios académicos con su trabajo en el mundo real. Actualmente, se encuentra cursando su licenciatura en Ingeniería Mecánica en la Universidad Tecnológica de la Ciudad. Desde una temprana edad, Javier mostró un profundo interés en comprender y aplicar conceptos ingenieriles en situaciones prácticas.</p>
+
+    <p>En paralelo a sus estudios, Adrián trabaja como pasante en una destacada empresa de diseño y fabricación de maquinaria pesada. Su papel en la empresa le permite aplicar directamente lo que aprende en el aula a proyectos reales, lo que ha fortalecido su comprensión de la ingeniería y su habilidad para resolver problemas de manera efectiva. A través de su dedicación, esfuerzo y pasión por la ingeniería, Adrián Vera se ha destacado como un ejemplo de cómo la combinación de la teoría y la práctica puede impulsar el éxito en el mundo de la ingeniería. Su historia es inspiradora para otros jóvenes que desean seguir carreras similares.</p>
+
+    <h1 id="redes-sociales">Redes Sociales</h1>
+    <p>Da clic y conoce las mejores redes!</p>
+    <nav>
+        <ul>
+            <li><a href="https://www.fb.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.x.com" target="_blank">X (Twitter antes)</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="galeria">Galería de Imágenes</h1>
+    <div class="galeria">
+        <div class="imagen-galeria">
+            <a href="https://th.bing.com/th/id/OIP.7ShWP35Vmdbqi1IDv3Pc4wHaE8?pid=ImgDet&rs=1" target="_blank">
+                <img src="https://th.bing.com/th/id/OIP.7ShWP35Vmdbqi1IDv3Pc4wHaE8?pid=ImgDet&rs=1" alt="Imagen 1" width="200">
+            </a>
+        </div>
+        <div class="imagen-galeria">
+            <a href="https://th.bing.com/th/id/R.c479885c56824b5e8cf935c1ffef95b1?rik=%2bMtamTDs3eCpfg&riu=http%3a%2f%2fudual.files.wordpress.com%2f2014%2f06%2fjugadores-de-futbol.jpg&ehk=f%2fBU673BQxW6QHrU0c4lOTVNxpd%2fx1FH7%2bo38IdmJWM%3d&risl=&pid=ImgRaw&r=0" target="_blank">
+                <img src="https://th.bing.com/th/id/R.c479885c56824b5e8cf935c1ffef95b1?rik=%2bMtamTDs3eCpfg&riu=http%3a%2f%2fudual.files.wordpress.com%2f2014%2f06%2fjugadores-de-futbol.jpg&ehk=f%2fBU673BQxW6QHrU0c4lOTVNxpd%2fx1FH7%2bo38IdmJWM%3d&risl=&pid=ImgRaw&r=0" alt="Imagen 2" width="200">
+            </a>
+        </div>
+        <div class="imagen-galeria">
+            <a href="https://th.bing.com/th/id/R.0b98e307557fea36faf2c5ff2d484b6e?rik=IVZ4T7kdo5rCKw&riu=http%3a%2f%2fblog.prospin.com.br%2fwp-content%2fuploads%2f2018%2f12%2fequipamento-tenis.jpeg&ehk=SGWHgoDFMu0Cm6yxs9HzwBvSPVQR8vBixheo5pBFNhk%3d&risl=&pid=ImgRaw&r=0" target="_blank">
+                <img src="https://th.bing.com/th/id/R.0b98e307557fea36faf2c5ff2d484b6e?rik=IVZ4T7kdo5rCKw&riu=http%3a%2f%2fblog.prospin.com.br%2fwp-content%2fuploads%2f2018%2f12%2fequipamento-tenis.jpeg&ehk=SGWHgoDFMu0Cm6yxs9HzwBvSPVQR8vBixheo5pBFNhk%3d&risl=&pid=ImgRaw&r=0" alt="Imagen 3" width="200">
+            </a>
+        </div>
+    </div>
+
+    <!-- Ventana emergente para las imágenes -->
+    <div class="ventana-emergente" id="ventana-emergente">
+        <img src="" alt="Imagen" class="imagen-emergente" id="imagen-emergente">
+    </div>
+
+    <script>
+        // Función para abrir la ventana emergente
+        function abrirVentanaEmergente(src) {
+            var ventanaEmergente = document.getElementById('ventana-emergente');
+            var imagenEmergente = document.getElementById('imagen-emergente');
+            imagenEmergente.src = src;
+            ventanaEmergente.style.display = 'block';
+        }
+
+        // Función para cerrar la ventana emergente
+        function cerrarVentanaEmergente() {
+            var ventanaEmergente = document.getElementById('ventana-emergente');
+            ventanaEmergente.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

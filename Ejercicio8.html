@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barra de Navegación</title>
+  <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        a:hover {
+            background-color: #555;
+        }
+
+        a:active {
+            color: #ff4500; 
+        }
+
+        
+        @media (max-width: 600px) {
+            ul {
+                flex-direction: column; 
+                text-align: center; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#redes-sociales">Redes Sociales</a></li>
+            <li><a href="https://www.fb.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.x.com" target="_blank">X (Twitter antes)</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="biografia">Biografía</h1>
+    <p>Adrian Vera es un apasionado estudiante de ingeniería que combina con éxito sus estudios académicos con su trabajo en el mundo real. Actualmente, se encuentra cursando su licenciatura en Ingeniería Mecánica en la Universidad Tecnológica de la Ciudad. Desde una temprana edad, Javier mostró un profundo interés en comprender y aplicar conceptos ingenieriles en situaciones prácticas.</p>
+
+    <p>En paralelo a sus estudios, Adrián trabaja como pasante en una destacada empresa de diseño y fabricación de maquinaria pesada. Su papel en la empresa le permite aplicar directamente lo que aprende en el aula a proyectos reales, lo que ha fortalecido su comprensión de la ingeniería y su habilidad para resolver problemas de manera efectiva. A través de su dedicación, esfuerzo y pasión por la ingeniería, Adrián Vera se ha destacado como un ejemplo de cómo la combinación de la teoría y la práctica puede impulsar el éxito en el mundo de la ingeniería. Su historia es inspiradora para otros jóvenes que desean seguir carreras similares.</p>
+
+    <h1 id="redes-sociales">Redes Sociales</h1>
+    <p>Da clic y conoce las mejores redes!</p>
+  <nav>
+      <ul>
+          <li><a href="https://www.fb.com" target="_blank">Facebook</a></li>
+          <li><a href="https://www.x.com" target="_blank">X (Twitter antes)</a></li>
+      </ul>
+  </nav>
+</body>
+</html>
